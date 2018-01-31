@@ -1,0 +1,36 @@
+<div class="ribbon">
+  <mat-toolbar>
+    <h6>
+      <span>Hardware / Sims / Add Sim</span>
+    </h6>
+  </mat-toolbar>
+
+<mat-card>
+  <form class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="First Name">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="Last Name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Select">
+        <mat-option value="option">Option1</mat-option>
+        <mat-option value="option">Option2</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea matInput placeholder="Message"></textarea>
+    </mat-form-field>
+
+    <mat-checkbox>Accept terms</mat-checkbox>
+  </form>
+</mat-card>

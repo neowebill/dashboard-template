@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.toolbar {
+ background-color: #404041;
+  color: #faa919;
+  border-bottom: #faa919 5px solid;
+}
+
+.is-mobile .toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+.mat-nav-list a:focus, .mat-nav-list a:hover {
+  text-decoration: none;
+  background: #faa919;
+  color: #fff;
+}
+
+h1.app-name {
+  margin-left: 8px;
+}
+
+.sidenav-container {
+  flex: 1;
+}
+
+.sidenav {
+  background-color: rgba(216,218,211,0.4);
+}
+.is-mobile .sidenav-container {
+  flex: 1 0 auto;
+}
